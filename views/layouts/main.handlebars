@@ -1,0 +1,56 @@
+<html lang=''>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Tech Blog</title>
+
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css'
+      rel='stylesheet'
+      integrity='sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9'
+      crossorigin='anonymous'
+    />
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js'
+      integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm'
+      crossorigin='anonymous'
+    ></script>
+    <!--styling-->
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="row text-center" id="nav-bar">
+        <div class="col-3 col-md-2 col-lg-1 my-auto" id="nav-link"><a href="/">Home</a></div>
+        {{#if logged_in}}
+        <div class="col-3 col-md-2 col-lg-1 my-auto" id="nav-link"><a href="/dashboard">Dashboard</a></div>
+        <div class="col-3 col-md-2 col-lg-1 my-auto" id="nav-link">
+          <button id="logout">Logout</button>
+        </div>
+        {{else}}
+        <div class="col-3 col-md-2 col-lg-1 my-auto" id="nav-link"><a href='/login'>Login</a></div>
+        {{/if}}
+        <div class="col"></div>
+      </div>
+      <div class="row text-center" id="page-header">
+        <div class="col-6 col-md-5 col-lg-4 my-auto">
+          <div id="page-header-hold">
+            <h1 id="page-header-text">Tech Blog</h1>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row" id="bottom-of-head"></div>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+  </body>
+</html>
+<script src='/js/logout.js'></script>
