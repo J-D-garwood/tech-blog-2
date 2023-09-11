@@ -14,8 +14,9 @@ My motivation for this project was to build a simple tech blog where a user coul
 I learned about integrating backend technologies (express, sequelize) with front end (html, css). I also learnt more about utilizing MVC.
 
 ## Installation
+NOTE: Navigate to github repo at https://github.com/J-D-garwood/Tech-Blog for previous commit messages and commits, new repo was created for deployment purposes.
 
-Navigate to github repo at https://github.com/J-D-garwood/Tech-Blog. Download all folders (config, controllers, db, models, public, seeds, views, etc.) and files (server.js, package.json, etc.)
+Navigate to github repo at https://github.com/J-D-garwood/tech-blog-2. Download all folders (config, controllers, db, models, public, seeds, views, etc.) and files (server.js, package.json, etc.)
 
 ## Credits
 
